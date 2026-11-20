@@ -111,6 +111,20 @@
         .filter-image:hover {
             filter: grayscale(0%);
         }
+        .quote {
+            position: relative;
+            padding-left: 20px;
+            font-style: italic;
+        }
+        .quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 40px;
+            color: lightgray;
+
+        }
     </style>
 </head>
 <body>
@@ -174,5 +188,8 @@
             <li>Item 4</li>
         </ul>
         <img src="./IMG20230613090629.jpg" alt="picture of benjilo" class="filter-image">
+        <blockquote class="quote">
+            This is a sample quote.
+        </blockquote>
 </body>
 </html>
